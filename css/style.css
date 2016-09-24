@@ -1,0 +1,200 @@
+h4,a,p{font-family: tahoma;}
+
+*{box-sizing: border-box;}
+
+ul{
+	list-style: none;
+}
+li{
+	display: list-item;
+}
+a{
+	text-decoration: none;
+}
+
+body{
+	position: relative;
+	width: 1920px;
+	margin: 0;
+	padding: 0;
+}
+
+
+
+.head{
+	width: 1920px;
+	height: 150px;
+	line-height: 150px;
+	background-color: #000000;
+	position: absolute;
+	-opacity: 0.1;
+}
+
+.head p{
+	font-size: 3.2em;
+	color: white;
+	text-align: center;
+
+}
+
+#menu{
+	width: 1920px;
+	height: 600px;
+	position: relative;
+	background: url(https://hd.unsplash.com/photo-1441015401724-70d16b783f5c)no-repeat center center;
+	-background-size: cover;
+	margin-top: 150px;
+}
+
+#menu .banner{
+	width: 100%;
+	height: 45px;
+	padding-top: 20px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	display: flex;
+	justify-content: center;
+}
+
+#menu .banner span{
+	width: 40px;
+	height: 5px;
+	background-color: white;
+	margin-right: 10px;
+}
+#menu .banner span.active,#menu .banner span:hover{
+	cursor: pointer;
+	background-color: black;
+}
+
+#section{
+	width: 1920px;
+	height: 3342px;
+	margin: auto;
+	margin-top: 70px;
+	font-weight: bold;
+	position: relative;
+}
+
+
+#section .columns{
+	width: 1383px;
+	position: absolute;
+	left: 400px;
+}
+
+#section .columns h4{
+	font-size: 24px;
+	font-weight: bold;
+	color: #666666;
+	margin: 0;
+	margin-bottom: 15px;
+}
+#section .columns h4.active:first-letter{
+	color: red;
+}
+
+#section .columns .column{
+	margin-bottom: 70px;
+}
+
+#section .columns .up-pro,#section .columns .down-pro{
+	width: 285px;
+	height: 490px;
+	background-color: #CCCCCC;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	display: inline-block;
+}
+
+#section .columns .down-pro{
+	margin-bottom: 0;
+}
+
+#elevator{
+	position:fixed;
+	left: 0;
+	top: 600px;
+	width: 400px;
+	padding-top: 150px;
+	padding-right: 36px;
+	display: none;
+}
+
+#elevator li{
+	width: 70px;
+	height: 36px;
+	line-height: 36px;
+	text-align: center;
+	cursor: pointer;
+	float: right;
+	margin-left: 300px;
+	
+}
+
+#elevator li.current a{
+	display: none;
+	color: red;
+	font-weight: bold;
+}
+
+#elevator li.current .etitle{
+	display: block;
+}
+
+#elevator li a{
+	display: block;
+	width: 22px;
+	height: 36px;
+	color: #666;
+	border-bottom: 1px solid black;
+	float: right;
+	text-decoration: none;
+}
+
+#elevator li .etitle{
+	display: none;
+	width: 70px;
+	height: 36px;
+}
+
+#toolbar{
+	position: fixed;
+	bottom: 260px;
+	right: 122px;
+	z-index: 10;
+	display: none;
+	
+}
+
+#toolbar a{
+	text-decoration: none;
+}
+
+#toolbar p{
+	width: 80px;
+	height: 120px;
+	line-height: 120px;
+	text-align: center;
+	background-color: #000000;
+	color: white;
+	font-size: 2.2em;
+	
+}
+
+footer{
+	-position: absolute;
+	bottom: 0;
+	width: 1920px;
+	height: 300px;
+	line-height: 300px;
+	background-color: gray;
+	margin: 0;
+}
+
+footer p{
+	font-size: 3.3em;
+	color: white;
+	text-align: center;
+}
